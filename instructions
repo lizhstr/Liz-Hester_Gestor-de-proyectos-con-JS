@@ -1,0 +1,35 @@
+Contenedor
+
+Asignar al contenedor un display flex.
+Menu
+
+Crear dos botones con los nombres Agregar y Listar.
+Asignar a ambos botones la clase opcion y al botón Agregar asignar la clase “activo”.
+Utilizar el evento onclick en los dos botones para ejecutar la función “abrirPanel” (se puede hacer en línea o con AddEventListener). Cada botón debe pasar como argumento a la función abrirPanel() el id del panel que se desea abrir
+onclick="abrirPanel('listar')"
+Asignar al panel menu un color de fondo #f1f1f1, un ancho del 30% y un alto de 300px.
+A los botones asignar un padding a los lados de 22px y arriba como abajo de 16px (padding: 16px 22px), un ancho del 100%, sin borde, el texto alineado a la izquierda, puntero tipo pointer y al pasar el mouse por arriba (hover) el color de fondo del botón cambia a #ddd.
+Al botón activo, asignar un color de fondo #ccc.
+Listar y agregar
+
+Asignar la clase panel para ambos div, definir el siguiente estilo: eliminar el padding de arriba y abajo, dar un padding de 12px a los lados, un ancho de 70%, eliminar el borde de la izquierda, un alto de 300px, asignar display igual a none para que se mantengan ocultas ambas por defecto, alinear el contenido al centro.
+Asignar una clase llamada activa al div agregar y asignar en css display block.
+Las clases activo y activa son diferentes, activo se utiliza para los botones y activa se estará utilizando para los paneles.
+Agregar
+
+Crear un título con el texto Agregar Proyecto.
+Crear un formulario con los campos Nombre de Proyecto, Lenguaje y Monto (monto puede ser un input tipo number). No utilizar label, solo asignar placeholder a los imput text.
+Dentro del formulario, crear un botón tipo submit que tenga el texto Agregar.
+Listar
+
+Crear un título con el texto Historial de Proyectos.
+Crear una tabla con id tabla, que contenga las cabeceras Proyecto, Lenguaje, Monto Facturado en Dólares.
+Utilizando CSS, centrar la tabla, margin:0 auto
+Nota: por el momento este panel no sera visible.
+JavaScript
+
+Crear la función abrirPanel, dentro de la cual se escribirá el código para las acciones siguientes.
+Por medio de DOM recuperar todos los elementos con la clase paneles, recórrerlas y eliminar la clase activa. Esto hará que todos los paneles se oculten (Revisar el css para comprender mejor este punto).
+Por medio de DOM recuperar todos los elementos con la clase opcion (botones) y eliminar la clase activo. Esto se hace simplemente para que ya no este ningún botón marcado como activo.
+Agregar al elemento panel seleccionado la clase activa. Este punto es la parte mas “complicada” de este ejercicio. Como ayuda, la función abrirPanel, debe recibir como parámetro el id del elemento que se quiere visualizar, ya sea listar o agregar.
+function abrirPanel(panelSeleccionado){}
