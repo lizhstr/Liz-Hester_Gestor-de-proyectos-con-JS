@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ;
+    background-color: #0c1c3c;
+    color: white;
+}
+
+header{
+    text-align: center;
+    font-size: 22px;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+#container{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+}
+
+#datos{
+    max-height: 200px;
+}
+
+#encabezado{
+    background-color: #fa755b;
+    border-radius: 10px 10px 0 0;
+    padding: 2px 0;
+    text-align: center;
+    font-style: oblique;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    height: 180px;
+    width: 200px;
+}
+
+form > input {
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: solid 1px #0c1c3c;
+}
+
+#guardar {
+    border: none;
+    background: linear-gradient( to right, #ffffff, #000000);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    color: #f4f4f4;
+    box-shadow: 0 12px 12px -11px;
+}
+
+#listaContactos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    margin: 10px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+    color: #0c1c3c;
+}
+
+#eliminar {
+    border: none;
+    background: linear-gradient( to right, #ffffff, #000000);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    color: #f4f4f4;
+    box-shadow: 0 12px 12px -11px;
+}

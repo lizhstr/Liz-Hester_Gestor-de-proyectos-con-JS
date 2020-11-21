@@ -10,8 +10,8 @@
 <body>
     <div id="contendedor">
         <div id="menu">
-            <button onclick="abrirPanel ('agregar')"class="opcion activo">Agregar</button>
-            <button onclick="abrirPanel('listar')" class="opcional activo">Listar</button>
+           <button onclick="abrirPanel" class="opcion activo">Agregar</button>
+           <button onclick="abrirPanel" class="opcion">Listar</button>
         </div>
 
         <div id="agregar" class="panel activa">
@@ -26,11 +26,11 @@
 
         <div id="listar" class="panel">
             <h2>Historial de proyectos</h2>
-            <table>
+            <table id="tabla">
                 <tr>
                     <th>Proyecto</th>
                     <th>Lenguaje</th>
-                    <th>Monto facturado en dóloares</th>
+                    <th>Monto facturado en dólares</th>
                 </tr>
             </table>
         </div>
